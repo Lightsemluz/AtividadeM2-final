@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~A C E R V O S~</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #faf3e0;
+        }
+
+        header {
+            position: relative;
+            background-color: #e67e22;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #logo {
+            position: absolute;
+            top: 4px;
+            left: 10px;
+            width: 75px; /* Ajuste o tamanho conforme necessário */
+            height: auto;
+        }
+
+        .navbar {
+            background-color: #e67e22;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #d35400;
+        }
+
+        .propaganda {
+            position: relative;
+            padding: 80px;
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .propaganda img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .propaganda h3,
+        .propaganda p {
+            color: #fff;
+            z-index: 1;
+            position: relative;
+        }
+
+        .conteudo {
+            margin: 20px;
+        }
+
+        #cadastro button,
+        #cadastro button:hover,
+        #cadastro button:active {
+            background-color: #DBA000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        #cadastro button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- LOGO -->
+        <img id="logo" src="img_src/acervo logo.png" alt="Logo do Seu Site">
+        <div id="cadastro">
+            <button onclick="document.location='cadas_cli.html'">Cadastrar Cliente</button>
+            <button onclick="document.location='carrinho.jsp?id=&idCliente=&idLivro='">Carrinho</button>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="cadas_liv.html">Cadastrar Livro</a>
+        <a href="Verif_Liv.jsp?id=&titulo=&editora=&autor=&ano=&valor=&quantidade=">Consultar Acervo !!!</a>
+        <a href="cadas_comd.jsp">Adicionar ao Carrinho</a>
+        <a href="Verif_User.jsp?id=&nome=&email=&cpf=">Lista de Clientes</a>
+    </nav>
+
+    <div class="propaganda">
+        
+        <img src="img_src/aaron-burden-9zsHNt5OpqE-unsplash.jpg"  alt="Imagem de Propaganda">
+        <h3>Conheça nossos Livros!</h3>
+        <p>Encontre os melhores títulos para você. Explore nosso acervo diversificado.</p>
+    </div>
+
+    <div class="conteudo">
+    </div>
+
+    <footer>
+    </footer>
+    <!-- ... (scripts e outros recursos necessários) ... -->
+</body>
+</html>

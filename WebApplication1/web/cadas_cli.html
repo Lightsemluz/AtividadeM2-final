@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro-Cliente</title>
+    <meta name="description" content="">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #faf3e0; /* Bege */
+        }
+
+        header {
+            background-color: #e67e22; /* Laranja Pastel */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .forms {
+            max-width: 500px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #d2b48c; /* Marrom Claro (ameno) */
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #e67e22; /* Laranja Pastel */
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #d35400; /* Laranja mais Escuro */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 id="logo">CADASTRO DO CLIENTE</h2> 
+    </header>
+    <div class="forms">
+        <form  name="frmCliCad" method="post" action="cadas_cli.jsp">
+            Nome: <input type="text" name="nome">
+            Email: <input type="email" name="email">
+            CPF: <input type="number" name="CPF">
+            Telefone/Whatsapp: <input type="number" name="cell">
+            <input type="reset" name="Limpa" value="Limpar">
+            <input type="submit" name="Envia" value="Enviar">  
+        </form>
+    </div>
+</body>
+</html>

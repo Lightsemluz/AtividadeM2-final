@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~A C E R V O S~</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #faf3e0;
+        }
+
+        header {
+            background-color: #e67e22;
+            color: #fff;
+            text-align: center;
+            padding: 48px 0;
+        }
+
+        .navbar {
+            background-color: #e67e22;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #d35400;
+        }
+
+        .propaganda {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .propaganda img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .propaganda h3 {
+            color: #333;
+        }
+
+        .propaganda p {
+            color: #555;
+            z-index: 1;
+            position: relative;
+        }
+
+        .conteudo {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 id="logo">~A C E R V O S~</h2> 
+        <div id="cadastro">
+            <button onclick="document.location='cadas_cli.html'">Cadastrar Cliente</button>
+            <button onclick="document.location='carrinho.html'">Carrinho</button>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="cadas_liv.html">Cadastrar Livro</a>
+        <a href="Verif_Liv.html">Consultar Acervo !!!</a>
+        <a href="cadas_comd.jsp">Adicionar ao Carrinho</a>
+        <a href="Verif_User.jsp?id=&nome=&email=&cpf=">Lista de Clientes</a>
+        <a href="Verif_pedidos.jsp">Consultar Pedidos ???</a>
+    </nav>
+
+    <div class="propaganda">
+        <h3>Conheça nossos Livros!</h3>
+        <p>Encontre os melhores títulos para você. Explore nosso acervo diversificado.</p>
+        <img src="img_src/aaron-burden-9zsHNt5OpqE-unsplash.jpg" alt="Imagem de Propaganda">
+    </div>
+
+    <div class="conteudo">
+      
+    </div>
+
+    <footer>
+        </footer>
+
+    <!-- ... (scripts e outros recursos necessários) ... -->
+
+</body>
+</html>
